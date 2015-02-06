@@ -1,0 +1,6 @@
+language: node_js
+node_js:
+  - '0.10'
+before_install:
+  - currentfolder=${PWD##*/}
+  - if [ "$currentfolder" != 'generator-trendystore' ]; then cd .. && eval "mv $currentfolder generator-trendystore" && cd generator-trendystore; fi

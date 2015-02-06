@@ -1,0 +1,17 @@
+{
+  "name": "<%= appname %>",
+  "version": "0.0.0",
+  "description": "<%= description %>",
+  "license": "<%= license %>",
+  "main": "index.html",
+  "repository": "<%= githubUser %>/<%= appname %>",
+  "author": {
+    "name": "<%= realname %>",
+    "email": "<%= email %>",
+    "url": "<%= githubUrl %>"
+  },
+  "dependencies": {
+    "polymer": "Polymer/polymer#^0.5.4",
+    "trendystore-elements": "TrendyGifts/trendystore-elements#^0.0.1"
+  }
+}
