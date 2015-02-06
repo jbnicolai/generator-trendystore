@@ -1,0 +1,35 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<polymer-element name="trendystore-app">
+  <template>
+    <style>
+      :host {
+        background-color: #e50026;
+        width: 100%;
+        height: 100%;
+		cursor: pointer;
+      }
+      h1, h2 {
+        color: #eee;
+      }
+      .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+    <div class="center" layout vertical center>
+      <h1>Coming Soon!</h1>
+      <br><br>
+      <h2 on-tap="{{followDevelopment}}">Follow development here ...</h2>
+    </div>
+  </template>
+  <script>
+    Polymer('trendystore-app', {
+      followDevelopment: function() {
+        document.location.href = 'https://github.com/BasicElements/generator-trendystore'
+      }
+    });
+  </script>
+</polymer-element>
