@@ -1,9 +1,9 @@
-## <%= storename %>
+## <%= storename %>-admin
 
 ### Install
 
 ```bash
-git clone https://github.com/<%= githubUser %>/<%= storename %>
+git clone https://github.com/<%= githubUser %>/<%= storename %>-admin
 ```
 
 ### Development
@@ -20,7 +20,7 @@ cd <%= storename %> && grunt serve
 
 ### Issues
 
-[Report Issue](https://github.com/<%= githubUser %>/<%= storename %>).
+[Report Issue](https://github.com/<%= githubUser %>/<%= storename %>-admin).
 
 ### License
 

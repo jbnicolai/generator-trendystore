@@ -1,10 +1,10 @@
 {
-  "name": "<%= storename %>",
+  "name": "<%= storename %>-admin",
   "version": "0.0.0",
   "description": "<%= description %>",
   "license": "<%= license %>",
   "main": "index.html",
-  "repository": "<%= githubUser %>/<%= storename %>",
+  "repository": "<%= githubUser %>/<%= storename %>-admin",
   "author": {
     "name": "<%= realname %>",
     "email": "<%= email %>",
@@ -12,8 +12,6 @@
   },
   "dependencies": {
     "polymer": "Polymer/polymer#^0.5.4",
-    "app-router": "erikringsmuth/app-router#^2.4.0",
-    "trendystore-store-elements": "TrendyGifts/trendystore-store-elements",
     "trendystore-admin-elements": "TrendyGifts/trendystore-admin-elements"
   }
 }

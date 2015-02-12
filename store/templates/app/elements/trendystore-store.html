@@ -1,0 +1,20 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/core-animated-pages/core-animated-pages.html">
+<link rel="import" href="../../bower_components/trendystore-admin-elements/trendystore-admin-elements.html">
+
+<polymer-element name="<%= storename %>-admin">
+  <template>
+    <core-animated-pages selected="{{selected}}" fit>
+
+      <trendystore-admin-login name="login" selected="{{selected}}"></trendystore-admin-login>
+      <trendystore-dashboard name="dashboard" selected="{{selected}}"></trendystore-dashboard>
+      <trendystore-config name="config" storename="<%= storename %>"></trendystore-config>
+
+    </core-animated-pages>
+  </template>
+  <script>
+    Polymer('<%= storename %>-admin', {
+
+    });
+  </script>
+</polymer-element>

@@ -21,10 +21,8 @@
   </head>
   <body unresolved fullbleed>
 
-    <app-router>
-      <app-route path="/" import="elements/<%= storename %>-store.html"></app-route>
-      <app-route path="/admin" import="elements/<%= storename %>-admin.html"></app-route>
-    </app-router>
+    <<%= storename %>-store></<%= storename %>-store>
+
 
     <!-- build:js scripts/store.js -->
     <script src="scripts/store.js"></script>

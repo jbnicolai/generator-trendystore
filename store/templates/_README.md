@@ -1,15 +1,15 @@
-## <%= storename %>
+## <%= storename %>-store
 
 ### Install
 
 ```bash
-git clone https://github.com/<%= githubUser %>/<%= storename %>
+git clone https://github.com/<%= githubUser %>/<%= storename %>-store
 ```
 
 ### Development
 
 ```bash
-cd <%= storename %> && grunt serve
+cd <%= storename %>-store && grunt serve
 ```
 
 #### Some notes
@@ -20,7 +20,7 @@ cd <%= storename %> && grunt serve
 
 ### Issues
 
-[Report Issue](https://github.com/<%= githubUser %>/<%= storename %>).
+[Report Issue](https://github.com/<%= githubUser %>/<%= storename %>-store).
 
 ### License
 
