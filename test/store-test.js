@@ -5,11 +5,11 @@ var assert = require('yeoman-generator').assert;
 var helpers = require('yeoman-generator').test;
 var os = require('os');
 
-describe('trendystore:store test', function () {
+describe('trendystore:store', function () {
   before(function (done) {
-    helpers.run(path.join(__dirname, '../app'))
+    helpers.run(path.join(__dirname, '../store'))
       .inDir(path.join(os.tmpdir(), './temp-test'))
-      .withOptions({ 'skip-install': true })
+      .withOptions({ 'skip-install' })
       .withPrompt({
         githubUser: "someValue",
         storename: "someValue",

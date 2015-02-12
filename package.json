@@ -11,7 +11,7 @@
     "url": "https://github.com/BasicElements"
   },
   "scripts": {
-    "test": "jshint {app-test,admin-test,store-test}/*.js && mocha --reporter spec"
+    "test": "mocha"
   },
   "engines": {
     "node": ">=0.12.0",
