@@ -5,7 +5,7 @@ var assert = require('yeoman-generator').assert;
 var helpers = require('yeoman-generator').test;
 var os = require('os');
 
-describe('trendystore:app test', function () {
+describe('trendystore:store test', function () {
   before(function (done) {
     helpers.run(path.join(__dirname, '../app'))
       .inDir(path.join(os.tmpdir(), './temp-test'))
@@ -33,11 +33,9 @@ describe('trendystore:app test', function () {
       // 'app/manifest.webapp',
       'app/styles/store.scss',
       'app/scripts/store.js',
-      'app/scripts/admin.js',
       'app/robots.txt',
       'app/elements/elements.html',
-      'app/elements/trendystore-store',
-      'app/elements/trendystore-admin'
+      'app/elements/trendystore-store.html'
     ]);
   });
 });

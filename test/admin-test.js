@@ -35,7 +35,7 @@ describe('trendystore:admin test', function () {
       'app/scripts/admin.js',
       'app/robots.txt',
       'app/elements/elements.html',
-      'app/elements/trendystore-admin'
+      'app/elements/trendystore-admin.html'
     ]);
   });
 });
