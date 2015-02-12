@@ -9,7 +9,7 @@ describe('trendystore:app', function () {
   before(function (done) {
     helpers.run(path.join(__dirname, '../app'))
       .inDir(path.join(os.tmpdir(), './temp-test'))
-      .withOptions({ 'skip-install' })
+      .withArguments(['--skip-install'])
       .withPrompt({
         githubUser: "someValue",
         storename: "someValue",
