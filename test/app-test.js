@@ -21,23 +21,23 @@ describe('trendystore:app test', function () {
 
   it('creates files', function () {
     assert.file([
-      'bower.json',
-      'package.json',
-      '.bowerrc',
-      '.gitignore',
-      '.editorconfig',
-      '.jshintrc',
-      'Gruntfile.js',
-      'app/index.html',
-      'app/manifest.json',
+      '_bower.json',
+      '_package.json',
+      '_bowerrc',
+      '_gitignore',
+      '_editorconfig',
+      '_jshintrc',
+      '_Gruntfile.js',
+      'app/_index.html',
+      'app/_manifest.json',
       // 'app/manifest.webapp',
-      'app/styles/store.scss',
-      'app/scripts/store.js',
-      'app/scripts/admin.js',
-      'app/robots.txt',
-      'app/elements/elements.html',
-      'app/elements/trendystore-store.html',
-      'app/elements/trendystore-admin.html'
+      'app/styles/_store.scss',
+      'app/scripts/_store.js',
+      'app/scripts/_admin.js',
+      'app/_robots.txt',
+      'app/elements/_elements.html',
+      'app/elements/_trendystore-store.html',
+      'app/elements/_trendystore-admin.html'
     ]);
   });
 });
