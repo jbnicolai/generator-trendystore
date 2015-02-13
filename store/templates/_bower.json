@@ -12,6 +12,6 @@
   },
   "dependencies": {
     "polymer": "Polymer/polymer#^0.5.4",
-    "trendystore-store-elements": "TrendyGifts/trendystore-store-elements"
+    "trendystore-store-elements": "basicelements/trendystore-store-elements"
   }
 }

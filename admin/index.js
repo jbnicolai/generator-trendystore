@@ -107,14 +107,12 @@ module.exports = yeoman.generators.Base.extend({
   },
 
   writing: {
-    projectfiles: function () {
+    admin: function () {
       this.copy('_editorconfig', '.editorconfig');
       this.copy('_jshintrc', '.jshintrc');
       this.copy('_gitignore', '.gitignore');
       this.copy('_bowerrc', '.bowerrc');
       this.copy('_Gruntfile.js', 'Gruntfile.js');
-    },
-    templates: function () {
       this.template('_package.json', 'package.json');
       this.template('_bower.json', 'bower.json');
       this.template('_README.md', 'README.md');
@@ -122,8 +120,6 @@ module.exports = yeoman.generators.Base.extend({
       this.template('app/_manifest.json', 'app/manifest.json');
       this.template('app/elements/_elements.html', 'app/elements/elements.html');
       this.template('app/elements/_trendystore-admin.html', 'app/elements/<%= storename %>-admin.html');
-    },
-    app: function () {
       this.copy('app/scripts/_admin.js', 'app/scripts/admin.js');
       this.copy('app/styles/_admin.scss', 'app/styles/admin.scss');
       this.copy('app/_robots.txt', 'app/robots.txt');

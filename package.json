@@ -1,6 +1,6 @@
 {
   "name": "generator-trendystore",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The Trendystore Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
