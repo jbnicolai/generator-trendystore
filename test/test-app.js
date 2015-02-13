@@ -12,7 +12,7 @@ describe('trendystore:app', function () {
       .withArguments(['--skip-install'])
       .withPrompt({
         githubUser: "someValue",
-        storename: "trendystore",
+        storeName: "trendystore",
         license: "someValue",
         lang: "someValue"
       })
@@ -35,7 +35,9 @@ describe('trendystore:app', function () {
       'app/scripts/store.js',
       'app/scripts/admin.js',
       'app/robots.txt',
-      'app/elements/elements.html'
+      'app/elements/elements.html',
+      'app/elements/trendystore-store.html',
+      'app/elements/trendystore-admin.html'
     ]);
   });
 });
