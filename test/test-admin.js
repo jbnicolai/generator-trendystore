@@ -21,8 +21,8 @@ describe('trendystore:admin', function () {
 
   it('creates files', function () {
     assert.file([
-      '.bower.json',
-      '.package.json',
+      'bower.json',
+      'package.json',
       '.bowerrc',
       '.gitignore',
       '.editorconfig',
