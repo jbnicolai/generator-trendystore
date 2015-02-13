@@ -12,7 +12,7 @@ describe('trendystore:store', function () {
       .withArguments(['--skip-install'])
       .withPrompt({
         githubUser: "someValue",
-        storename: "trendystore",
+        storeName: "trendystore",
         license: "someValue",
         lang: "someValue"
       })
@@ -34,7 +34,8 @@ describe('trendystore:store', function () {
       'app/styles/store.scss',
       'app/scripts/store.js',
       'app/robots.txt',
-      'app/elements/elements.html'
+      'app/elements/elements.html',
+      'app/elements/trendystore-store.html'
     ]);
   });
 });
