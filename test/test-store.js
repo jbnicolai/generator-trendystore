@@ -5,14 +5,14 @@ var assert = require('yeoman-generator').assert;
 var helpers = require('yeoman-generator').test;
 var os = require('os');
 
-describe('trendystore:admin', function () {
+describe('trendystore:store', function () {
   before(function (done) {
-    helpers.run(path.join(__dirname, '../admin'))
+    helpers.run(path.join(__dirname, '../store'))
       .inDir(path.join(os.tmpdir(), './temp-test'))
       .withArguments(['--skip-install'])
       .withPrompt({
         githubUser: "someValue",
-        storename: "someValue",
+        storename: "trendystore",
         license: "someValue",
         lang: "someValue"
       })
@@ -21,21 +21,20 @@ describe('trendystore:admin', function () {
 
   it('creates files', function () {
     assert.file([
-      '_bower.json',
-      '_package.json',
-      '_.bowerrc',
-      '_gitignore',
-      '_editorconfig',
-      '_jshintrc',
-      '_Gruntfile.js',
-      'app/_index.html',
-      'app/_manifest.json',
+      'bower.json',
+      'package.json',
+      '.bowerrc',
+      '.gitignore',
+      '.editorconfig',
+      '.jshintrc',
+      'Gruntfile.js',
+      'app/index.html',
+      'app/manifest.json',
       // 'app/manifest.webapp',
-      'app/styles/_admin.scss',
-      'app/scripts/_admin.js',
-      'app/_robots.txt',
-      'app/elements/_elements.html',
-      'app/elements/_trendystore-admin.html'
+      'app/styles/store.scss',
+      'app/scripts/store.js',
+      'app/robots.txt',
+      'app/elements/elements.html'
     ]);
   });
 });
