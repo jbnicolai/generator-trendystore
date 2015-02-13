@@ -121,8 +121,8 @@ module.exports = yeoman.generators.Base.extend({
       this.template('app/_index.html', 'app/index.html');
       this.template('app/_manifest.json', 'app/manifest.json');
       this.template('app/elements/_elements.html', 'app/elements/elements.html');
-      this.template('app/elements/_trendystore-store.html', 'app/elements/<%= storename %>-store.html');
-      this.template('app/elements/_trendystore-admin.html', 'app/elements/<%= storename %>-admin.html');
+      this.template('app/elements/_trendystore-store.html', 'app/elements/' + this.storename + '-store.html');
+      this.template('app/elements/_trendystore-admin.html', 'app/elements/' + this.storename + '-admin.html');
     },
     app: function () {
       this.copy('app/scripts/_store.js', 'app/scripts/store.js');
