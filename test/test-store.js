@@ -12,7 +12,7 @@ describe('trendystore:store', function () {
       .withArguments(['--skip-install'])
       .withPrompt({
         githubUser: "someValue",
-        storename: "someValue",
+        storename: "trendystore",
         license: "someValue",
         lang: "someValue"
       })
