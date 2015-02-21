@@ -1,7 +1,7 @@
 # generator-trendystore
 
 [![Build Status](https://secure.travis-ci.org/BasicElements/generator-trendystore.png?branch=master)](https://travis-ci.org/BasicElements/generator-trendystore)
-[![Dependency Status] (https://david-dm.org/basicelements/generator-trendystore.svg)](https://david-dm.org/basicelements/generator-trendystore)
+[![Dependency Status](https://david-dm.org/basicelements/generator-trendystore.svg)](https://david-dm.org/basicelements/generator-trendystore)
 
 
 > [Yeoman](http://yeoman.io) generator
