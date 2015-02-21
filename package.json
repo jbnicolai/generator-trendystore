@@ -1,6 +1,6 @@
 {
   "name": "generator-trendystore",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The Trendystore Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
@@ -23,7 +23,7 @@
   "dependencies": {
     "chalk": "^0.5.1",
     "github": "^0.2.3",
-    "lodash": "^3.1.0",
+    "lodash": "^2.4.1",
     "path": "^0.11.14",
     "underscore.string": "^3.0.2",
     "yeoman-generator": "^0.18.8",
