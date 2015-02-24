@@ -1,9 +1,9 @@
-<link rel="import" href="../../bower_components/polymer/polymer.html">
-<link rel="import" href="../../bower_components/pvc-globals/pvc-globals.html">
-<link rel="import" href="../../bower_components/core-animated-pages/core-animated-pages.html">
-<link rel="import" href="../../bower_components/core-animated-pages/transitions/slide-from-right.html">
-<link rel="import" href="../../bower_components/core-style/core-style.html">
-<link rel="import" href="../../bower_components/trendystore-store-elements/trendystore-store-elements.html">
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/pvc-globals/pvc-globals.html">
+<link rel="import" href="../bower_components/core-animated-pages/core-animated-pages.html">
+<link rel="import" href="../bower_components/core-animated-pages/transitions/slide-from-right.html">
+<link rel="import" href="../bower_components/core-style/core-style.html">
+<link rel="import" href="../bower_components/trendystore-store-elements.html">
 
 <polymer-element name="<%= storename %>-store">
   <template>
@@ -25,7 +25,7 @@
 
       <trendystore-store-panel name="store" globals="{{globals}}" slide-from-right></trendystore-store-panel>
 
-      <trendystore-team id="team" name="teamMembers" globals="{{globals}}"slide-from-right></trendystore-team>
+      <trendystore-team id="team" name="teamMembers" color="cyan" globals="{{globals}}"slide-from-right></trendystore-team>
 
       <trendystore-license name="license" globals="{{globals}}" slide-from-right></trendystore-license>
 
