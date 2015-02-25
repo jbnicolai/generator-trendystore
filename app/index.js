@@ -73,19 +73,25 @@ module.exports = yeoman.generators.Base.extend({
       name: 'lang',
       message: 'The Default language',
       default: 'en'
+    },{
+      name: 'includeSass',
+      message: 'would you like to use SASS/SCSS?',
+      default: 'yes'
     }];
 
     this.prompt(prompts, function (props) {
       this.githubUser = props.githubUser;
       this.storename = props.storeName;
       this.description = props.description;
-      this.license = this.license;
+      this.license = props.license;
       this.lang = props.lang;
+      this.includeSass = props.includeSass;
 
       // Save config to .yo-rc.json file
       this.config.set({
         storename: this.storename,
-        lang: this.lang
+        lang: this.lang,
+        includeSass: this.includeSass
       });
       this.config.save();
 
@@ -121,13 +127,15 @@ module.exports = yeoman.generators.Base.extend({
       this.template('app/_index.html', 'app/index.html');
       this.template('app/_manifest.json', 'app/manifest.json');
       this.template('app/elements/_elements.html', 'app/elements/elements.html');
-      this.template('app/elements/_trendystore-store.html', 'app/elements/' + this.storename + '-store.html');
-      this.template('app/elements/_trendystore-admin.html', 'app/elements/' + this.storename + '-admin.html');
+      this.template('app/elements/_trendystore-store.html', 'app/elements/' +this.storename '-store/' + this.storename + '-store.html');
+      this.template('app/elements/_trendystore-admin.html', 'app/elements/' +this.storename '-admin/' + this.storename + '-admin.html');
+      this.template('app/elements/_trendystore-store.css', 'app/elements/' +this.storename '-store/' this.includeSass ? +this.storename '-store.scss' : + this.storename + '-store.css');
+      this.template('app/elements/_trendystore-admin.css', 'app/elements/' +this.storename '-admin/' this.includeSass ? +this.storename '-admin.scss' : + this.storename + '-admin.css');
     },
     app: function () {
       this.copy('app/scripts/_store.js', 'app/scripts/store.js');
       this.copy('app/scripts/_admin.js', 'app/scripts/admin.js');
-      this.copy('app/styles/_store.scss', 'app/styles/store.scss');
+      this.copy('app/styles/main.css', this.includeSass ? 'app/styles/main.scss':'app/styles/main.css');
       this.copy('app/_robots.txt', 'app/robots.txt');
     }
   },

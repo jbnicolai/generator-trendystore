@@ -1,9 +1,12 @@
-<link rel="import" href="../../bower_components/polymer/polymer.html">
-<link rel="import" href="../../bower_components/core-animated-pages/core-animated-pages.html">
-<link rel="import" href="../../bower_components/trendystore-admin-elements/trendystore-admin-elements.html">
+<link rel="import" href="../../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../../bower_components/core-animated-pages/core-animated-pages.html">
+<link rel="import" href="../../../bower_components/trendystore-admin-elements/trendystore-admin-elements.html">
 
 <polymer-element name="<%= storename %>-admin">
   <template>
+    <!-- build:css trendystore-admin.css -->
+    <link rel="stylesheet" href="trendystore-store.css">
+    <!-- endbuild-->
     <core-animated-pages selected="{{selected}}" fit>
 
       <trendystore-admin-login name="login" selected="{{selected}}"></trendystore-admin-login>
